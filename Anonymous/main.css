@@ -1,16 +1,24 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 html{
 	scroll-behavior: smooth;
 }
 
 body{
 	background-color: #ecf0f1 ;
-	margin: 0;
+	margin: 0 20px;
 	padding: 0;
 	overflow-x: hidden;
 	background-image: url(Dane/Obrazy/interlaced.png)
 }
 
 .site-nav{
+	position: fixed;
+	top: 0;
 	height: 40px;
 	width: 100%;
 	background-color:#ffffff;
@@ -51,13 +59,19 @@ body{
 	right: 0;
 	height: 100%;
 	width: 350px;
-	transform: translateX(100%);
-	transition: 0.3s transform ease-in-out;
+
 	font-family: 'Lato', sans-serif;
 	background-image: url(Dane/Obrazy/interlaced.png);
 	overflow-y: scroll;
 	position: fixed;
+	transform: translateX(100%);
+	transition: 0.3s transform ease-in-out;
 }
+
+.menu-active{
+	transform: translateX(0) !important;
+}
+
 
 .site-menu ul{
 	padding: 0;
@@ -99,9 +113,6 @@ body{
 	color: #0fe460e1;
 }
 
-.site-nav-trigger:focus ~ .site-menu, .site-menu:hover{
-	transform: translateX(0);
-}
 .container{
 	width:all;
 }
@@ -113,7 +124,8 @@ body{
 .content{
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
+	max-width: 1000px;
+	width: 100%;
 }
 
 h1{
@@ -144,6 +156,7 @@ hr{
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	margin-bottom: 20px;
 }
 
 hr.style-eight {
