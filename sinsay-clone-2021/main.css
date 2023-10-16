@@ -1,0 +1,952 @@
+
+*{
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	outline: none;
+
+}
+
+.bot-nav > ul > li{
+	transition: all 0.4s linear;
+}
+
+/*---- Responsywa ----*/
+@media only screen and (max-width : 1190px) { 
+
+	.bot-nav > ul > li{
+		font-size: 13px !important;
+		padding-right: 10px !important;
+		padding-left: 10px !important;
+	}
+
+}
+
+@media only screen and (max-width : 992px) { }
+
+@media only screen and (max-width : 840px) { 
+	iframe.zawartosc_strony {
+		height: 100vh !important;
+	}
+	div.top-nav{
+		display: none;
+	}
+
+	div.bot-nav{
+		display: none;
+	}
+}
+@media only screen and (min-width : 840px) { 
+	nav{
+		display: none;
+	}
+}
+@media only screen and (max-width : 480px) { }
+
+@media only screen and (max-width : 320px) { }
+
+/*---- Responsywa Koniec ----*/
+
+a{
+	text-decoration: none;
+}
+
+.top-nav a{
+	color: white;
+}
+
+.bot-nav a{
+	color: white;
+}
+
+.flex_block{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flex_block_center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*---------------------------------------- Alternatywna Nawigacja --------------------------------------------*/
+
+nav {
+	background: #1b1b1b;
+}
+
+nav:after{
+	content: '';
+	clear: both;
+	display: table;
+}
+nav .logo-alt{
+	display: flex;
+	justify-content: center;
+	height: 70px;
+	align-items: center;
+	background-color: #22252A;
+}
+
+nav label.icon {
+	position: absolute;
+	left: 0px;
+	top: 0px;	
+}
+
+nav ul{
+	float: right;
+	list-style: none;
+	position: relative;
+	background-color: white;
+}
+
+nav ul li{
+	float: left;
+	display: inline-block;
+	background: #1b1b1b;
+	margin: 0 5px;
+}
+
+nav ul li a{
+	color: black;
+	line-height: 70px;
+	font-size: 18px;
+	padding: 8px 15px;
+}
+nav ul li a:hover{
+	color: goldenrod;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #33ffff, 0 0 5px #33ffff;
+}
+
+nav ul ul li a:hover{
+	color: goldenrod;
+	box-shadow: none;
+}
+
+nav ul ul{
+	position: absolute;
+	top: 90px;
+	border-top: 3px solid cyan;
+	opacity: 0;
+	visibility: hidden;
+	transition: top 0.3s;
+}
+
+nav ul ul ul{
+	border-top: none;
+}
+
+nav ul li:hover > ul {
+	top: 70px;
+	opacity: 1;
+	visibility: visible;
+}
+nav ul ul li{
+	position: relative;
+	margin: 0px;
+	width: 150px;
+	float: none;
+	display: list-item;
+	border-bottom: 1px solid rgba(0,0,0,0,0.3);
+}
+
+nav ul ul li a{
+	line-height: 50px;
+}
+
+nav ul ul ul li{
+	position: relative;
+	top: -70px;
+	left: 150px;
+}
+
+nav .plusik{
+	margin-left: 40px;
+	font-size: 15px;
+}
+
+nav .show,.icon, nav input{
+	display: none;
+}
+
+
+nav span.break{
+	display: flex;
+	justify-content: space-between;
+	color: black;
+	width: 100%;
+	white-space: nowrap;
+	font-weight: 600;
+}
+
+nav ul li ul li span.break{
+	padding-left: 10px;
+	font-size: 16px;
+	font-weight: 500;
+	border-left: 5px solid #e8e8e8;
+}
+
+nav ul li ul li ul li span.break{
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.logo-alt img{
+	width: 109px;
+	height: 40px;
+}
+
+@media all and (max-width:840px) {
+	nav ul{
+		margin-right: 0px;
+		float: left;
+		height: 100%;
+	}
+	nav .logo{
+		padding-left: 30px;
+		width: 100%;
+	}
+
+	nav ul li, nav ul ul li {
+		display: block;
+		width: 100%;
+		background-color: white;
+		border-top: 1px solid #e8e8e8;
+		border-bottom: 1px solid #e8e8e8;
+		
+	}
+
+	nav ul ul{
+		top: 70px;
+		position: static;
+		border-top: none;
+		float: none;
+		display: none;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	nav ul ul ul li{
+		position: static;
+	}
+
+	nav ul ul li{
+		border-bottom: 0px;
+	}
+
+	nav ul ul li a{
+	display: block;
+	color: black;
+	font-size: 16px;
+	font-weight: 500;
+	margin: 0 0 0 60px;
+	padding-left:10px !important;
+	border-left: 5px solid #e8e8e8;
+	}
+
+	
+
+	a.a-inne{
+	margin: 0 0 0 20px;
+	}
+
+	nav ul ul ul li a{
+		padding-left:60px;
+		color: black;
+	}
+
+	nav .show {
+		display: block;
+		color: black;
+		font-size: 18px;
+		padding: 0 20px;
+		line-height: 70px;
+		cursor: pointer;
+	}
+
+	nav .show span:hover{
+		color: goldenrod;
+	}
+
+	nav .show:hover{
+		color: goldenrod;
+	}
+
+	nav .icon{
+		display: block;
+		color: white;
+		position: absolute;
+		height: 70px;
+		font-size: 25px;
+		cursor: pointer;
+		width: 70px;
+	}
+
+	nav ul li a:hover {
+		box-shadow: none;
+	}
+
+	nav .show + a, ul{
+		display: none;
+	}
+
+	span.plus-off{
+		display: none;
+	}
+
+	nav [id^=btn]:checked + ul{
+		display: block;
+	}
+
+	nav [id^=click]:checked + div{
+		display: block;
+	}
+
+	nav .icon-2, .icon-3{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		position: absolute;
+		height: 70px;
+		font-size: 25px;
+		cursor: pointer;
+		width: 30px;
+		top: 0;
+	}
+	.icon-3 img{
+		height:26px;
+		width:26px;
+	}
+
+	.icon-3::after{
+		content: 'Koszyk';
+	}
+
+	.icon-2::after, .icon-3::after{
+		position: absolute;
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 2px;
+		transform: translateY(22px);
+	}
+
+	.icon-2 img{
+		height:28px;
+		width:28px;
+	}
+
+	.icon-2::after{
+		content: 'Konto';
+	}
+
+	.icon-2{
+		right: 20px;
+	}
+
+	.icon-3{
+		right: 80px;	
+	}
+
+	li.koniec-alt-menu{
+		margin-left:0;
+		width:100%;
+		height:380px;
+		background-color: #F1F2F4;
+		margin-bottom: 0;
+		display: flex;
+		flex-direction: column;
+	}
+	li.koniec-alt-menu div{
+		width: 100%;
+		border-bottom: 1px solid #e8e8e8;
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+	}
+
+	li.koniec-alt-menu div:first-child{
+		height: 80px;
+	}
+
+	li.koniec-alt-menu div{
+		height: 50px;
+	}
+	
+
+	li.koniec-alt-menu a{
+		font-size: 16px;;
+	}
+
+	span.linki-zz{
+		text-decoration: underline;
+	}
+	span.lub{
+		color: #909194;
+		margin: 0 50px 0 50px;
+	}
+
+	li.koniec-alt-menu a:hover{
+		color: black;
+	}
+
+	li.koniec-alt-menu img{
+		margin-left:10px;
+		width:20px;
+		height: 20px;
+	}
+
+	li.koniec-alt-menu div span:first-child{
+		display: flex;
+		align-items: center;
+		padding-bottom: 2px;
+		height: 100%;
+	}
+
+	nav .burger-btn{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.5s ease-in-out;
+	}
+	nav .burger{
+		width: 25px;
+		height: 3px;
+		background: #fff;
+		border-radius: 5px;
+		box-shadow: 0 2px 5px rgba(255,101,47,0.2);
+		transition: all 0.5s ease-in-out;
+	}
+
+	nav .burger::before,
+	nav .burger::after{
+		content: '';
+		position: absolute;
+		width: 25px;
+		height: 3px;
+		background: #fff;
+		border-radius: 5px;
+		box-shadow: 0 2px 5px rgba(255,101,47,0.2);
+		transition: all 0.5s ease-in-out;
+	}
+
+	nav .burger::before{
+		transform: translateY(-8px);
+	}
+
+	nav .burger::after{
+		transform: translateY(8px);
+	}
+
+	nav .open .burger{
+		transform: translateX(-50px);
+		background: transparent;
+		box-shadow: none;
+	}
+
+	nav .open .burger::before{
+		transform: rotate(45deg) translate(35px, -35px);
+	}
+
+	nav .open .burger::after{
+		transform: rotate(-45deg) translate(35px, 35px);
+	}
+
+/*--- Logowanie w alternatywnym menu ---*/
+
+	div.konto{
+		display: none;
+		width: 100%;
+		height:410px;
+		position: absolute;
+	}
+
+
+	div.account-window-alt{
+		z-index: 100;
+		top:0;
+		right:15px;
+		position: absolute;
+		width: 380px !important;
+		height: 405px !important;
+		outline: 1px rgb(241, 242, 244) solid;
+	}
+	
+	div.account-window-login-alt{
+		height: 180px;
+		width: 380px;
+		padding: 40px;
+		background-color: rgb(241, 242, 244);
+	}
+	
+	div.account-window-alt p{
+		font-size: 16px;
+		font-weight: 800;
+	}
+	
+	div.account-window-login-alt button{
+		width: 170px;
+		height: 44px;
+		opacity: 90%;
+		border: none;
+		outline: none;
+		text-align: center;
+		margin-top: 40px;
+		color: white;
+		font-size: 15px;
+		font-weight: 800;
+		background-color: rgb(223, 154, 85);
+	}
+	div.account-window-login-alt button:hover{
+		opacity: 100%;
+		cursor: pointer
+	}
+	
+	div.account-window-register-alt{
+		height: 225px;
+		width: 380px;
+		padding: 40px;
+		background-color: white;
+	}
+	
+	div.account-window-register-alt button{
+		width: 202px;
+		height: 44px;
+		margin-top: 60px;
+		text-align: center;
+		color: black;
+		font-size:15px;
+		font-weight: 800;
+		border: 2px solid black;
+		background-color: white;
+	}
+	
+	div.account-window-register-alt button:hover{
+		background-color: black;
+		color: #fff;
+		cursor: pointer;
+	}
+	/*--- Logowanie w alternatywnym menu Koniec ---*/
+
+}
+
+/*---------------------------------------- Alternatywna Nawigacja Koniec --------------------------------------------*/
+
+/*---------------------------------------- Nawigacja --------------------------------------------*/ 
+
+.top-nav{
+background-color: #22252a;
+height: 70px;
+}
+
+/*--wyszukiwarka-- */ 
+
+.search{	
+	margin-left: 100px;
+	height:70px;
+}
+
+.search-window{
+	width: 240px;
+	height: 35px;
+	padding: 0px 0px 10px 40px;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	border-bottom: 1px solid rgb(188, 189, 190);
+	background-color: transparent;
+	color: white;
+	font-size: 16px;
+	cursor: text;
+}
+
+.search-window::selection {
+    background: #f7786b;
+	color: #fff;
+}
+
+.search-window::placeholder{
+	font-size: 16px;
+	color: rgb(188, 189, 190);
+}
+
+.top-nav div.input svg{
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	bottom: 40%;
+	left: 5%;
+	filter: invert(0.8);
+}
+
+.search-window:active{
+	outline: none;
+}
+.search-window:focus{
+	outline: none;
+}
+
+/*--wyszukiwarka koniec--*/ 
+
+/*--logo--*/
+
+.logo{
+	height: 70px;
+}
+.logo img{
+	width: 109px;
+	height: 40px;
+}
+
+/*--logo koniec--*/
+
+/*--przyciski górnego menu--*/
+
+.nav-buttons{
+	width: 240px;
+	height: 70px;
+	margin-right: 100px;
+	position: relative;
+}
+
+.nav-buttons ul li{
+	list-style: none;
+	height: 70px;
+	width: 70px;
+
+	background-repeat: no-repeat;
+	background-size:20px;
+	background-position-x:center;
+	background-position-y:15px;
+}
+
+li.language{
+	background-image: url(images/menu/launguage.svg);
+}
+
+li.account{
+	background-image: url(images/menu/account.svg);
+}
+
+/*--blok logowania i rejestracji--*/
+
+div.account-window{
+	display: none;
+	z-index: 100;
+	top:71px;
+	right:15px;
+	position: absolute;
+	width: 380px !important;
+	height: 405px !important;
+	outline: 1px rgb(241, 242, 244) solid;
+}
+
+li.account:hover div.account-window{
+	display: block;
+}
+
+li.account:active div.account-window{
+	display: block;
+}
+
+li.account:focus div.account-window{
+	display: block;
+}
+
+div.account-window-login{
+	height: 180px;
+	width: 380px;
+	padding: 40px;
+	background-color: rgb(241, 242, 244);
+}
+
+div.account-window p{
+	font-size: 16px;
+	font-weight: 800;
+}
+
+div.account-window-login button{
+	width: 170px;
+	height: 44px;
+	opacity: 90%;
+	border: none;
+	outline: none;
+	text-align: center;
+	margin-top: 40px;
+	color: white;
+	font-size: 15px;
+	font-weight: 800;
+	background-color: rgb(223, 154, 85);
+}
+div.account-window-login button:hover{
+	opacity: 100%;
+	cursor: pointer
+}
+
+div.account-window-register{
+	height: 225px;
+	width: 380px;
+	padding: 40px;
+	background-color: white;
+}
+
+div.account-window-register button{
+	width: 202px;
+	height: 44px;
+	margin-top: 60px;
+	text-align: center;
+	color: black;
+	font-size:15px;
+	font-weight: 800;
+	border: 2px solid black;
+	background-color: white;
+}
+
+div.account-window-register button:hover{
+	background-color: black;
+	color: #fff;
+	cursor: pointer
+}
+
+/*--blok logowania i rejestracji koniec--*/
+
+li.cart{
+	background-image: url(images/menu/cart.svg);
+}
+
+.nav-buttons ul li > a{
+	width: 70px;
+	height:59px;
+	font-size: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	border-bottom: 1px transparent solid;
+	
+}
+
+.nav-buttons ul li a:hover{
+	border-bottom: 1px white solid;
+}
+
+/*--przyciski górnego menu koniec--*/
+
+.bot-nav{
+	background-color: #373a3e;
+	height: 64px;
+}
+
+.bot-nav > ul{
+	list-style: none;
+	height: 64px;
+	letter-spacing: 1px;
+}
+
+.bot-nav ul li{
+	height: 64px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	padding: 22px 30px;
+}
+
+.bot-nav ul li:hover{
+	background-color: white;
+	color: #373a3e;
+}
+
+/*--Okno pod drugim menu--*/
+
+.second-menu-window{
+	display: none;
+	top: 128px;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	outline: 1px solid black;
+	align-items: flex-start !important;
+	background-color: rgb(241, 242, 244);
+}
+
+.second-menu-window-choose{
+	padding-top: 30px;
+	padding-bottom: 40px;
+	width: 31%;
+	background-color: white;
+}
+.second-menu-window-categhory{
+	box-sizing:content-box;
+	width: 69%;
+	background-color: rgb(241, 242, 244);
+	position: relative;
+}
+
+.second-menu-window-choose ol > li{
+	height: 64px;
+	text-align: end;
+	padding-right: 40px;
+	color: black;
+	position: relative;
+}
+
+.sale .second-menu-window-choose ol > li{
+	color:red;
+}
+
+.second-menu-window-choose ol > li:hover{
+	background-color: rgb(241, 242, 244);
+	color: rgb(223, 154, 85);
+}
+
+.second-menu-window-choose ol li span{
+	top: 20px;
+	right:0;
+	width: 4px;
+	background-color: transparent;
+	height: 20px;
+	position: absolute;
+}
+
+.second-menu-window-choose ol li:hover span{
+	background-color: rgb(223, 154, 85);
+}
+
+/*-- okno okna pod drugim menu --*/
+
+.second-menu-window-choose-ul {
+	background-color: transparent;
+	list-style: none;
+	z-index: 101;
+	width: 400px;
+	margin: 0;
+	padding-left:80px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+.second-menu-window-choose-ul:hover {
+	display: block;
+}
+.second-menu-window-choose-ul:active {
+	display: block;
+}
+
+.second-menu-window-choose-ul li{
+	text-align: start;
+	height: 15px !important;
+	padding: 18px 0 !important;
+	color: black;
+	letter-spacing: 1px;
+}
+
+.second-menu-window-choose-ul li:first-child{
+	padding: 10px 0 30px 0 !important;
+}
+
+.second-menu-window-choose-ul li:first-child a{
+	color: rgb(122, 124, 127);
+	font-weight: 600;
+}
+
+.second-menu-window-choose-ul li:first-child a:hover{
+	text-decoration: none;
+}
+
+.second-menu-window-choose-ul > li:hover{
+	background-color: transparent !important;
+}
+
+.second-menu-window-choose-ul > li > a{
+	color: rgb(34, 37, 42);
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.second-menu-window-choose-ul > li > a:hover{
+	text-decoration: underline;
+}
+
+/*-- Wywołania okienek pod listą w bot-nav --*/
+
+.bot-nav ul > li.sale:hover .second-menu-window{
+	display: flex;
+}
+
+.bot-nav ul > li.new:hover .second-menu-window{
+	display: flex;
+}
+
+.bot-nav ul > li.child:hover .second-menu-window{
+	display: flex;
+}
+
+.bot-nav ul > li.house:hover .second-menu-window{
+	display: flex;
+}
+
+.bot-nav ul > li.beauty:hover .second-menu-window{
+	display: flex;
+}
+
+.bot-nav ul > li.trends:hover .second-menu-window{
+	display: flex;
+}
+
+.bot-nav ul > li.man:hover .second-menu-window{
+	display: flex;
+}
+
+.bot-nav ul > li.woman:hover .second-menu-window{
+	display: flex;
+}
+
+/*-- Wywołania okienek pod listą w bot-nav koniec --*/
+ul.hax{
+	padding-bottom: 0px;
+}
+
+ul.hax > li:first-child a{
+	font-size: 18px;
+	font-weight: 600;
+	color:black;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+ul.hax > li:first-child{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px !important;
+}
+
+ul.hax > li:first-child a:hover{
+	text-decoration: underline;
+}
+
+ ul.hax > li > a{
+	font-size: 18px;
+	font-weight: 600;
+	color:black;
+}
+
+ul.hax > li{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+
+/*-- okno okna pod drugim menu koniec--*/
+
+/*--okno pod drugim koniec--*/
+
+/*---------------------------------------- Nawigacja Koniec ----------------------------------------*/
+
+iframe.zawartosc_strony {
+	height: calc(100vh - 134px);
+	width: 100%;
+	outline: 0;
+	border: 0;
+}
