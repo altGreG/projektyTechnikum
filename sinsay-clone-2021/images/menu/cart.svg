@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_cart_default" width="18.2" height="21" data-name="icon cart default" viewBox="0 0 18.2 21">
+    <defs>
+        <style>
+            .cls-1,.cls-2,.cls-4{fill:none}.cls-1{stroke:#e8e8e9;stroke-width:2px}.cls-3,.cls-5{stroke:none}.cls-5{fill:#e8e8e9}
+        </style>
+    </defs>
+    <g id="Rectangle_74" class="cls-1" data-name="Rectangle 74">
+        <path d="M0 0h18.2v14.231H0z" class="cls-3" transform="translate(0 6.769)"/>
+        <path d="M1 1h16.2v12.231H1z" class="cls-4" transform="translate(0 6.769)"/>
+    </g>
+    <g id="Subtraction_1" class="cls-2" data-name="Subtraction 1">
+        <path d="M11.431 8.75H0V7.292C0 3.271 2.564 0 5.716 0s5.715 3.271 5.715 7.292v1.457z" class="cls-3" transform="translate(3.385)"/>
+        <path d="M9.41 6.75C9.213 4.125 7.601 2 5.716 2 3.83 2 2.218 4.125 2.02 6.75h7.39m2.02 2H0V7.292C0 3.27 2.564 0 5.716 0c3.15 0 5.715 3.271 5.715 7.292V8.75z" class="cls-5" transform="translate(3.385)"/>
+    </g>
+</svg>
