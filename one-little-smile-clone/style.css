@@ -1099,3 +1099,8 @@ div.diy_menu_blok img{
 .li_diy:hover div.diy_menu {
     display: flex;
 }
+
+.diy_menu img, .wlasna_firma_menu img{
+    width: 320px;
+    height: 200px;
+}
