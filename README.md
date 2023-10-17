@@ -7,3 +7,5 @@ Repozytorium w którym przechowuję stare projekty stron internetowych wykonanyc
   [Firma Krawczyk](https://altgreg.github.io/projektyTechnikum/Krawczyk)
 ## 3. Klon strony Sinsay
   [Klon Sinsay](https://altgreg.github.io/projektyTechnikum/sinsay-clone-2021)
+## 4. Klon strony One Little Smile
+  [Klon One Little Smile](https://altgreg.github.io/projektyTechnikum/one-little-smile-clone)
