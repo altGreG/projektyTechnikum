@@ -1,0 +1,23 @@
+table{
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 5px; 
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+table tr:first-child{
+    background-color: rgb(27, 26, 26);
+    color: aliceblue;
+}
+table tr:first-child td{
+    border-right: 1px solid aliceblue;
+}
+table tr:first-child td:last-child{
+    border: none;
+}
