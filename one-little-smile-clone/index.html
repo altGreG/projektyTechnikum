@@ -1,0 +1,563 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>One Little Smile</title>
+	<meta name="description" content="#" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap&subset=latin-ext" rel="stylesheet">
+	<link href="fontello/css/fontello.css" rel="stylesheet">
+	<link href="fontello/fontello2/css/fontello.css" rel="stylesheet">
+
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="jquery.scrollTo.min.js"></script>
+	<script>
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+
+			$('.home').click(function() { $.scrollTo($('body'), 1000); });
+
+		}
+		);
+	</script>
+</head>
+<body>
+<header>
+<div class="header">
+<nav>
+	<div class="top_nav flexBlock">
+		<div class="options1">
+			<ul class="flexBlock">
+				<li><a href="#">O MNIE</a></li>
+				<li><a href="#">WSPÓŁPRACA</a></li>
+				<li><a href="#">KONTAKT</a></li>
+			</ul>
+		</div>
+		<div class="social flexBlock">
+			<div class="social_icons">
+				<ul class="flexBlock">
+					<li><a href="#"><i class="demo-icon icon-facebook"></i></a></li>
+					<li><a href="#"><i class="demo-icon icon-twitter-bird"></i></a></li>
+					<li><a href="#"><i class="demo-icon icon-pinterest"></i></a></li>
+					<li><a href="#"><i class="demo-icon icon-blogger"></i></a></li>
+					<li><a href="#"><i class="demo-icon icon-instagram"></i></a></li>
+				</ul>
+			</div>
+			<div class="search">
+				<form class="flexBlock_center">
+					<input type="search" placeholder="SZUKAJ"  ><button><i class="demo-icon icon-search"></i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+</nav>
+	<div class="logo_container flexBlock_center">
+		<div class="logo flexBlock_center">
+			<div><img src="https://paulinaszczepanska.pl/wp-content/uploads/2015/05/logoonelittlesmile2.png" alt="logo" /></div>
+		</div>	
+	</div>
+<nav>
+<!-- alternatywna nawighacja początek -->
+<nav class="site-nav">
+	<button class="site-nav-trigger"><i class="demo-icon icon-menu"></i></button>
+	<div class="site-menu">
+		<ol class="">
+			<li><a class="home" href="#home">HOME</a></li>
+			<li><a href="#">GRAFIKA</a></li>
+			<li><a href="#">WŁASNA FIRMA</a></li>
+			<li><a href="#">ROZWÓJ</a></li>
+			<li><a href="#">DIY</a></li>
+			<li><a href="#">POZOSTAŁE</a></li>
+			<li><a href="#">MÓJ SKLEP</a></li>
+			<li><hr></li>
+			<li><a href="#">O MNIE</a></li>
+			<li><a href="#">WSPÓŁPRACA</a></li>
+			<li><a href="#">KONTAKT</a></li>
+			<li><hr></li>
+			<li class="li_before_last"><a href=""><i class="demo-icon icon-down"></i> LINKI SPOŁECZNOŚCI <i class="demo-icon icon-down"></i></a></li>
+			<li class="last_li"><div class="flexBlock_center">
+				<ul class="flexBlock">
+					<li><a href="#"><i class="demo-icon icon-facebook"></i></a></li>
+					<li><a href="#"><i class="demo-icon icon-twitter-bird"></i></a></li>
+					<li><a href="#"><i class="demo-icon icon-pinterest"></i></a></li>
+					<li><a href="#"><i class="demo-icon icon-blogger"></i></a></li>
+					<li><a href="#"><i class="demo-icon icon-instagram"></i></a></li>
+				</ul>
+				</div>
+			</li>
+			<li><hr></li>
+			<li class="li_search flexBlock_center"><div class="search flexBlock_center">
+					<form class="flexBlock_center">
+						<input type="search" placeholder="SZUKAJ"  ><button><i class="demo-icon icon-search"></i></button>
+					</form>
+				</div>
+			</li>
+		</ol>
+	</div>
+</nav>
+<!-- alternatywna nawighacja koniec -->
+<div class="bot_nav flexBlock_center">
+	<div class="options2">
+		<ul class="flexBlock_center">
+			<li><a class="home" href="#">HOME</a></li>
+			<li class="li_grafika"><a href="#">GRAFIKA</a>
+				<div  class="grafika_menu flexBlock">
+					<div class="grafika_lista">
+						<ul>
+							<li><a href="#">TAPETY</a></li>
+							<li><a href="#">DO WYDRUKU</a></li>
+						</ul>
+					</div>
+					<div class="photo">
+						<img src="img/piesek.jpg" />
+						<a href="#">TAPETA NA MAJ</a>
+					</div>
+					<div class="photo">
+						<img src="img/piesek.jpg" />
+						<a href="#">TAPETA NA KWIECIEŃ</a>
+					</div>
+					<div class="photo">
+						<img src="img/piesek.jpg" />
+						<a href="#">TAPETA NA MARZEC</a>
+					</div>
+				</div>
+			</li>
+			<li class="li_wf"><a href="#">WŁASNA FIRMA</a>
+				<div class="wlasna_firma_menu flexBlock">
+					<div class="wf_menu_blok">
+						<a href="#"><img src="img/piesek.jpg" /></a>
+						<a class="wf_link" href="#">Girlboss Santa – 28 pomysłów na prezent od przedsiębiorczych kobiet</a>
+					</div>
+					<div class="wf_menu_blok">
+						<a href="#"><img src="img/piesek.jpg" /></a>
+						<a class="wf_link" href="#">Co musisz wiedzieć zanim zlecisz projekt logo?</a>
+					</div>
+					<div class="wf_menu_blok">
+						<a href="#"><img src="img/piesek.jpg" /></a>
+						<a class="wf_link" href="#">Wizualna ściągawka (brand style guide). <br>Dlaczego potrzebujesz jej do budowania spójnej marki?<br>Jak ją zrobić? + Darmowe szablony</a>
+					</div>
+				</div>
+			</li>
+			<li class="li_rozwoj"><a href="#">ROZWÓJ</a>
+				<div>
+					<div class="rozwoj_menu flexBlock">
+						<div class="rozwoj_lista">
+							<ul>
+								<li><a href="#">MOTYWACJA</a></li>
+								<li><a href="#">NARZĘDZIA</a></li>
+								<li><a href="#">EFEKTYWNOŚĆ</a></li>
+							</ul>
+						</div>
+						<div class="photo">
+							<img src="img/piesek.jpg" />
+							<a href="#">Gdzie się uczyć nowych rzeczy?</a>
+						</div>
+						<div class="photo">
+							<img src="img/piesek.jpg" />
+							<a href="#">Jak sprawdzić jakiego motywu i wtyczek używa strona na WordPressie?</a>
+						</div>
+						<div class="photo">
+							<img src="img/piesek.jpg" />
+							<a href="#">Wizualna ściągawka (brand style guide). <br>Dlaczego potrzebujesz jej do budowania spójnej marki?<br>Jak ją zrobić? + Darmowe szablony</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="li_diy"><a href="#">DIY</a>
+				<div class="diy_menu flexBlock">
+					<div class="diy_menu_blok">
+						<a href="#"><img src="img/piesek.jpg" /></a>
+						<a class="diy_link" href="#">Wypędzanie nudy z kuchni, czyli metamorfoza ściany bez życia</a>
+					</div>
+					<div class="diy_menu_blok">
+						<a href="#"><img src="img/piesek.jpg" /></a>
+						<a class="diy_link" href="#">Jak bez wiercenia odmienić nudną ścianę w przedpokoju?</a>
+					</div>
+					<div class="diy_menu_blok">
+						<a href="#"><img src="img/piesek.jpg" /></a>
+						<a class="diy_link" href="#">Co włożyć w ramkę? 9 tanich i niecodziennych pomysłów</a>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">POZOSTAŁE</a>
+				<ol>
+					<li class="flexBlock"><a href="#">CIEKAWOSTKI<i class="demo-icon icon-right-open"></i></a><a class="a_godne_polecenia" href="#">GODNE POLECENIA</a></li>
+					<li><a href="#">BLOGI</a></li>
+					<li><a href="#">GOTOWANIE</a></li>
+					<li><a href="#">HUMOR</a></li>
+					<li><a href="#">KULTURA</a></li>
+					<li><a href="#">PODRÓŻE</a></li>
+					<li><a href="#">STYL ŻYCIA</a></li>
+					<li><a href="#">WNĘTRZA</a></li>
+				</ol>
+			</li>
+			<li><a href="#">MÓJ SKLEP</a></li>
+		</ul>
+	</div>
+</div>
+</nav>
+</div>
+</header>
+
+<div class="container"> <!-- POCZĄTEK DIVA CONTAINER -->
+
+		<div class="banner"><img src="img/banner.png" alt="banner" /></div>
+		<div class="line flexBlock"><hr class="line1"><h3>NAJNOWSZE WPISY</h3><hr class="line2"></div>
+		
+<div class="flexBlock"> <!-- POCZĄTEK DIVA FLEXBLOCK DLA DIVÓW TOPIC I SUBTOPIC -->
+	<main>
+		<div class="topic_container">
+			<article>
+				<section>
+					<div class="topic flexBlock">
+						<div class="photo"><img src="img/topicimg.png" /></div>
+						<div class="topic_content">
+							<div class="titles"><div><a href="#"><h5>TAPETY</h5></a></div><div><a href="#"><h4>TAPETY NA MARZEC</h4></a></div></div>
+							<div class="content"><p>W tym tygodniu rozpoczęła się przedsprzedaż mojego ebooka z Inspekcjami Graficznymi. Tak mocno pochłonęło mnie jego tworzenie i pokazywanie Wam…</p></div>
+							<div class="button"><a href="#">CZYTAJ DALEJ</a></div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="topic flexBlock">
+						<div class="photo"><img src="img/topic2.png" /></div>
+						<div class="topic_content">
+							<div class="titles"><div><a href="#"><h5>TAPETY</h5></a></div><div><a href="#"><h4>TAPETY NA LUTY</h4></a></div></div>
+							<div class="content"><p>Muszę Wam powiedzieć, że strasznie trudno szuka się skojarzeń z lutym, kiedy temperatura na termometrze osiąga 14 stopni, aura bardziej…</p></div>
+							<div class="button"><a href="#">CZYTAJ DALEJ</a></div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="topic flexBlock">
+						<div class="photo"><img src="img/topic3.png" /></div>
+						<div class="topic_content">
+							<div class="titles"><div><a href="#"><h5>TAPETY</h5></a></div><div><a href="#"><h4>TAPETY NA STYCZEŃ</h4></a></div></div>
+							<div class="content"><p>Styczeń to trudny miesiąc, nawet gdy chodzi o wymyślanie motywu przewodniego do tapety. Być może to kwestia poświątecznego rozmemłania, ale…</p></div>
+							<div class="button"><a href="#">CZYTAJ DALEJ</a></div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="topic flexBlock">
+						<div class="photo"><img src="img/topic4.png" /></div>
+						<div class="topic_content">
+							<div class="titles"><div><a href="#"><h5>CIEKAWOSTKI, WŁASNA FIRMA</h5></a></div><div><a href="#"><h4>GIRLBOSS SANTA – 28 POMYSŁÓW NA PREZENT OD PRZEDSIĘBIORCZYCH KOBIET</h4></a></div></div>
+							<div class="content" style="margin-top: 50px;"><p>Poradniki prezentowe to jedna z moich ulubionych tradycji na tym blogu. Tym razem zapragnęłam jednak delikatnego liftingu. Nie chciałam znowu…</p></div>
+							<div class="button" style="margin-bottom: 10px;"><a href="#">CZYTAJ DALEJ</a></div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="topic flexBlock">
+						<div class="photo"><img src="img/topic5.png" /></div>
+						<div class="topic_content">
+							<div class="titles"><div><a href="#"><h5>TAPETY</h5></a></div><div><a href="#"><h4>TAPETA NA GRUDZIEŃ</h4></a></div></div>
+							<div class="content"><p>Projektując grudniowe tapety, zawsze czuję większą presję niż we wszystkie pozostałe miesiące. To właśnie grudniowe edycje są najpopularniejsze, najczęściej chwalone…</p></div>
+							<div class="button"><a href="#">CZYTAJ DALEJ</a></div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="topic flexBlock">
+						<div class="photo"><img src="img/top.png" /></div>
+						<div class="topic_content">
+							<div class="titles"><div><a href="#"><h5>TAPETY</h5></a></div><div><a href="#"><h4>TAPETA NA LISTOPAD</h4></a></div></div>
+							<div class="content"><p>W zeszłym roku siadając do projektowania tapety na listopad, pisałam, że mam ochotę projektować kwitnące drzewa – tak było ciepło…</p></div>
+							<div class="button"><a href="#">CZYTAJ DALEJ</a></div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="topic flexBlock">
+						<div class="photo"><img src="img/topic6.jpg" /></div>
+						<div class="topic_content">
+							<div class="titles"><div><a href="#"><h5>GRAFIKA, WŁASNA FIRMA</h5></a></div><div><a href="#"><h4>CO MUSISZ WIEDZIEĆ ZANIM ZLECISZ PROJEKT LOGO?</h4></a></div></div>
+							<div class="content" style="margin-top: 50px;"><p>Stało się, stawiasz pierwsze kroki w świecie przedsiębiorców. Kroczysz niepewnie, badasz grunt, pokonujesz kolejne wyzwania, dylematy i prędzej czy później…</p></div>
+							<div class="button" style="margin-bottom: 10px;"><a href="#">CZYTAJ DALEJ</a></div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="topic flexBlock">
+						<div class="photo"><img src="img/topic7.png" /></div>
+						<div class="topic_content">
+							<div class="titles"><div><a href="#"><h5>TAPETY</h5></a></div><div><a href="#"><h4>TAPETA NA PAŹDZIERNIK</h4></a></div></div>
+							<div class="content"><p>Ta odsłona tapety to jednocześnie mały jubileusz. Dokładnie 6 lat temu wymyśliłam sobie tę serię i opublikowałam pierwszą tapetę w…</p></div>
+							<div class="button"><a href="#">CZYTAJ DALEJ</a></div>
+						</div>
+					</div>
+				</section>
+			</article>
+		</div>
+	</main>
+
+
+	<aside>
+		<div class="subtopic_container">
+			<section>
+				<div class="social_icons ">
+					<ul class="flexBlock_center">
+						<li><a href="#"><i class="demo-icon icon-facebook"></i></a></li>
+						<li><a href="#"><i class="demo-icon icon-twitter-bird"></i></a></li>
+						<li><a href="#"><i class="demo-icon icon-pinterest"></i></a></li>
+						<li><a href="#"><i class="demo-icon icon-blogger"></i></a></li>
+						<li><a href="#"><i class="demo-icon icon-instagram"></i></a></li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div class="mini_reklama">
+					<a href="#"><img src="img/mini_reklama.png" alt="mini_reklama"/></a>
+				</div>
+			</section>
+			<section>
+				<div class="sub_wpisy">
+
+					<h4>POPULARNE WPISY</h4>
+				<section>
+					<a href=""><img src="img/komputer.jpg" /></a>
+					<ul>
+						<li><a href="#" style="margin: 0; padding: 0;"><p>JAK DODAĆ ZDJĘCIE LUB RELACJĘ NA INSTAGRAM Z KOM...</p></a></li>
+					</ul>
+				</section>
+
+				<section>
+					<a href=""><img src="img/komputer.jpg" /></a>
+					<ul>
+						<li><a href="#" style="margin: 0; padding: 0;"><p>JAK ZROBIĆ DOMOWY BUDYŃ?</p></a></li>
+					</ul>
+				</section>
+
+				<section>
+					<a href=""><img src="img/komputer.jpg" /></a>
+					<ul>
+						<li><a href="#" style="margin: 0; padding: 0;"><p>22 NAJLEPSZE, DARMOWE FONTY IMITUJĄCE ODRĘCZNE P...</p></a></li>
+					</ul>
+				</section>
+
+				<section>
+					<a href=""><img src="img/komputer.jpg" /></a>
+					<ul>
+						<li><a href="#" style="margin: 0; padding: 0;"><p>WIELKA LISTA ODRĘCZNYCH FONTÓW – Z POLSKIM...</p></a></li>
+					</ul>
+				</section>
+
+				<section>
+					<a href=""><img src="img/komputer.jpg" /></a>
+					<ul>
+						<li><a href="#" style="margin: 0; padding: 0;"><p>DIY: ORGANIZACJA PRZEPISÓW – PRZEPIŚNIK DO...</p></a></li>
+					</ul>
+				</section>
+
+				<section>
+					<a href=""><img src="img/komputer.jpg" /></a>
+					<ul>
+						<li><a href="#" style="margin: 0; padding: 0;"><p>5 STRON, KTÓRE POMOGĄ DOBRAĆ KOLORY</p></a></li>
+					</ul>
+				</section>
+
+					
+				</div>
+			</section>
+			<section>
+				<div class="archiwa">
+					<h4 style="margin-bottom: 20px;">ARCHIWA</h4>
+					<label for"arch" >Archiwa</label>
+					<select class="arch">
+						<option selected>WYBIERZ MIESIĄC</option>
+						<option>MARZEC 2020</option>
+						<option>LUTY 2020</option>
+						<option>STYCZEŃ 2020</option>
+						<option>GRUDZIEŃ 2019</option>
+						<option>LISTOPAD 2019</option>
+						<option>PAŹDZIERNIK 2019</option>
+						<option>WRZESIEŃ 2019</option>
+						<option>SIERPIEŃ 2019</option>
+						<option>LIPIEC 2019</option>
+						<option>CZERWIEC 2019</option>
+						<option>MAJ 2019</option>
+						<option>KWIECIEŃ 2019</option>
+						<option>MARZEC 2019</option>
+						<option>LUTY 2019</option>
+						<option>STYCZEŃ 2019</option>
+					</select>
+				</div>
+			</section>
+		</div>
+	</aside>
+
+</div><!-- ZAKOŃCZENIE DIVA FLEXBLOCK DLA TOPIC I SUBTOPIC -->
+
+
+<!--BOT_CONETNT_BLOK_POCZĄTEK-->
+<div class="line flexBlock"><hr class="line1"><h3>PRZYDATNE NARZĘDZIA</h3><hr class="line2" style="width: 700px;"></div>
+
+<div class="bot_content">
+		<ul class="flexBlock" style="align-items: flex-start;">
+			<li>
+				<a href="#"><img src="img/topicimg.png" /></a>
+				<a href="#"><h5>CIEKAWOSTKI, GRAFIKA, NARZĘDZIA</h5></a>
+				<a href="#"><h4>GDZIE SIĘ UCZYĆ NOWYCH RZECZY?</h4></a>
+			</li>
+
+			<li>
+				<a href="#"><img src="img/topicimg.png" /></a>
+				<a href="#"><h5>NARZĘDZIA</h5></a>
+				<a href="#"><h4>JAK SPRAWDZIĆ JAKIEGO MOTYWU I WTYCZEK UŻYWA STRONA NA WORDPRESSIE?</h4></a>
+			</li>
+
+			<li>
+				<a href="#"><img src="img/topicimg.png" /></a>
+				<a href="#"><h5>GRAFIKA, NARZĘDZIA, WŁASNA FIRMA</h5></a>
+				<a href="#"><h4>WIZUALNA ŚCIĄGAWKA (BRAND STYLE GUIDE). </br>
+					DLACZEGO POTRZEBUJESZ JEJ DO BUDOWANIA SPÓJNEJ MARKI? </br>
+					JAK JĄ ZROBIĆ? + DARMOWE SZABLONY</h4></a>
+			</li>
+		</ul>
+
+		<a  href="#" class="bot_button">ZOBACZ WIĘCEJ WPISÓW</a>
+</div>
+<!--BOT_CONETNT_BLOK_KONIEC-->
+
+<!--BOT_CONETNT_BLOK_POCZĄTEK-->
+<div class="line flexBlock"><hr class="line1"><h3>DIY</h3><hr class="line2" style="width: 900px;"></div>
+
+<div class="bot_content">
+		<ul class="flexBlock" style="align-items: flex-start;">
+			<li>
+				<a href="#"><img src="img/topicimg.png" /></a>
+				<a href="#"><h5>DIY, WNĘTRZA</h5></a>
+				<a href="#"><h4>WYPĘDZANIE NUDY Z KUCHNI, CZYLI METAMORFOZA ŚCIANY BEZ ŻYCIA</h4></a>
+			</li>
+
+			<li>
+				<a href="#"><img src="img/topicimg.png" /></a>
+				<a href="#"><h5>DIY, WNĘTRZA</h5></a>
+				<a href="#"><h4>JAK BEZ WIERCENIA ODMIENIĆ NUDNĄ ŚCIANĘ W PRZEDPOKOJU?</h4></a>
+			</li>
+
+			<li>
+				<a href="#"><img src="img/topicimg.png" /></a>
+				<a href="#"><h5>DIY, WNĘTRZA</h5></a>
+				<a href="#"><h4>CO WŁOŻYĆ W RAMKĘ? 9 TANICH I NIECODZIENNYCH POMYSŁÓW</h4></a>
+			</li>
+		</ul>
+
+		<a  href="#" class="bot_button">ZOBACZ WIĘCEJ WPISÓW</a>
+</div>
+<!--BOT_CONETNT_BLOK_KONIEC-->
+
+<!--BOT_CONETNT_BLOK_POCZĄTEK-->
+<div class="line flexBlock"><hr class="line1"><h3>MOTYWACJA</h3><hr class="line2" style="width: 850px;"></div>
+
+<div class="bot_content">
+		<ul class="flexBlock" style="align-items: flex-start;">
+			<li>
+				<a href="#"><img src="img/topicimg.png" /></a>
+				<a href="#"><h5>CIEKAWOSTKI, MOTYWACJA</h5></a>
+				<a href="#"><h4>6 MITÓW, W KTÓRE WIERZYŁAM PRZED ZAŁOŻENIEM FIRMY</h4></a>
+			</li>
+
+			<li>
+				<a href="#"><img src="img/topicimg.png" /></a>
+				<a href="#"><h5>MOTYWACJA</h5></a>
+				<a href="#"><h4>5 ZDAŃ, KTÓRE WARTO SOBIE PRZYPOMNIEĆ PO KAŻDYM SŁABYM DNIU</h4></a>
+			</li>
+
+			<li>
+				<a href="#"><img src="img/topicimg.png" /></a>
+				<a href="#"><h5>BLOGI, MOTYWACJA</h5></a>
+				<a href="#"><h4>4 NAJLEPSZE RADY, JAKIE USŁYSZAŁAM NA TEMAT BLOGOWANIA I PROWADZENIA FIRMY</h4></a>
+			</li>
+		</ul>
+
+		<a  href="#" class="bot_button">ZOBACZ WIĘCEJ WPISÓW</a>
+</div>
+<!--BOT_CONETNT_BLOK_KONIEC-->
+
+<!--BOT_CONETNT_BLOK_POCZĄTEK-->
+<div class="line flexBlock"><hr class="line1"><h3>TAPETY</h3><hr class="line2" style="width: 880px;"></div>
+
+<div class="bot_content">
+		<ul class="flexBlock" style="align-items: flex-start;">
+			<li>
+				<a href="#"><img src="img/topicimg.png" /></a>
+				<a href="#"><h5>TAPETY</h5></a>
+				<a href="#"><h4>TAPETA NA MARZEC</h4></a>
+			</li>
+
+			<li>
+				<a href="#"><img src="img/topic2.png" /></a>
+				<a href="#"><h5>TAPETY</h5></a>
+				<a href="#"><h4>TAPETA NA LUTY</h4></a>
+			</li>
+
+			<li>
+				<a href="#"><img src="img/topic3.png" /></a>
+				<a href="#"><h5>TAPETY</h5></a>
+				<a href="#"><h4>TAPETA NA STYCZEŃ</h4></a>
+			</li>
+		</ul>
+
+		<a  href="#" class="bot_button2">WSZYSTKIE NAJNOWSZE WPISY</a>
+</div>
+<!--BOT_CONETNT_BLOK_KONIEC-->
+</div> <!-- ZAKOŃCZENIE DIVA CONTAINER --> 
+
+<footer>
+	<div class="footer_top_container">
+		<div class="footer_top">
+			<a href="#"><h4>PAULINASZCZEPANSKAPL</h4></a>
+			<ul class="flexBlock_center">
+				<li><a href="#"><img src="https://paulinaszczepanska.pl/wp-content/uploads/sb-instagram-feed-images/89371150_573788609891190_139087934460627504_nlow.jpg" /></a></li>
+				<li><a href="#"><img src="https://paulinaszczepanska.pl/wp-content/uploads/sb-instagram-feed-images/89371150_573788609891190_139087934460627504_nlow.jpg" /></a></li>
+				<li><a href="#"><img src="https://paulinaszczepanska.pl/wp-content/uploads/sb-instagram-feed-images/89371150_573788609891190_139087934460627504_nlow.jpg" /></a></li>
+				<li><a href="#"><img src="https://paulinaszczepanska.pl/wp-content/uploads/sb-instagram-feed-images/89371150_573788609891190_139087934460627504_nlow.jpg" /></a></li>
+				<li><a href="#"><img src="https://paulinaszczepanska.pl/wp-content/uploads/sb-instagram-feed-images/89371150_573788609891190_139087934460627504_nlow.jpg" /></a></li>
+				<li style="margin-right: 30px;"><a href="#"><img src="https://paulinaszczepanska.pl/wp-content/uploads/sb-instagram-feed-images/89371150_573788609891190_139087934460627504_nlow.jpg" /></a></li>
+			</ul>
+			<div class="twob_line flexBlock_center">
+				<a href="#" class="load">Load More...</a>
+				<a href="#" class="insta"><i class="demo-icon icon-instagram" style="filter:blur(0)"></i>Follow On Instagram</a>
+			</div>
+		</div>
+		<div class="footer_bottom flexBlock">
+			<a href=""><h4 style="color: #f2f2f2; font-size: 13px;">ONE LITTLE SMILE</h4></a>
+			<a class="home" href="#" style="margin-right: 40px;"><h4 style="color: #f2f2f2; font-size: 13px;">DO GÓRY<i class="demo-icon icon-up-big" style="font-size: 16px; font-weight: 400; filter: blur(0);"></i></h4></a>
+		</div>
+	</div>
+</footer>
+<script>
+	$(document).ready(function() {
+var NavY = $('.bot_nav').offset().top;
+ 
+var stickyNav = function(){
+var ScrollY = $(window).scrollTop();
+	  
+if (ScrollY > NavY) { 
+	$('.bot_nav').addClass('sticky');
+} else {
+	$('.bot_nav').removeClass('sticky'); 
+}
+if (ScrollY > NavY) { 
+	$('.site-nav-trigger').addClass('showed');
+} else {
+	$('.site-nav-trigger').removeClass('showed'); 
+}
+};
+ 
+stickyNav();
+ 
+$(window).scroll(function() {
+	stickyNav();
+});
+});
+</script>
+
+</body>
+</html>
