@@ -1,0 +1,38 @@
+.content{
+    width: 100%;
+    padding: 0 20px
+}
+
+
+.content h1{
+    margin-top: 30px;
+    width: max-content;
+    background-color: rgb(83, 83, 83);
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+
+.content span:first-child{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.content span:first-child form input[type="number"]{
+    width: 30px;
+    height: 30px;
+}
+
+.content span:first-child form label{
+    font-size: 20px;
+}
+
+span.rekordy_info{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 20px;
+}
