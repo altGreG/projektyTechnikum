@@ -1,0 +1,256 @@
+*{
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	outline: none;
+}
+
+div.container{
+    display: flex;
+}
+
+div.container > div{
+    height: calc(100vh - 2px);
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+}
+
+div.blok_rejestracji{
+    flex: 1.25;
+}
+
+div.blok_logowania{
+    flex: 1;
+}
+
+div.signbox{
+    width:520px;
+    padding-bottom: 100px; 
+    color: white;
+    border: 2px solid black;
+    margin-left: 100px;
+}
+form{
+    position: relative;
+}
+h1{
+    padding: 0 0 0 20px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.signbox form p{
+    color: black;
+    position: absolute;
+    left: 5%;
+    transition: ease-in-out 0.3s;
+}
+
+.signbox form p.first_p{
+    top: 30px;
+}
+.signbox form p.second_p{
+    top:110px;
+}
+.signbox form p.third_p{
+    top: 110px;
+    left: 55%;
+}
+
+.signbox form p.fourth_p{
+    top: 190px;
+}
+
+.signbox input{
+    width:90%;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+input.short_input{
+    width: 40%;
+}
+.signbox input[type="text"]:focus + p.first_p{
+    top: 10px;
+    font-size: 12px;
+    transition: ease-in-out 0.3s;
+}
+input[type="password"]:focus + p.fourth_p{
+    top: 170px;
+    font-size: 12px;
+    transition: ease-in-out 0.3s;
+}
+
+.signbox input[type="text"]:active + p.first_p{
+    top: 10px;
+    font-size: 12px;
+    transition: ease-in-out 0.3s;
+}
+input[type="password"]:active + p.fourth_p{
+    top: 170px;
+    font-size: 12px;
+    transition: ease-in-out 0.3s;
+}
+
+input[type="text"]:focus + p.second_p{
+    top: 90px;
+    font-size: 12px;
+    transition: ease-in-out 0.3s;
+}
+
+.signbox input[type="text"]:active + p.second_p{
+    top: 90px;
+    font-size: 12px;
+    transition: ease-in-out 0.3s;
+}
+
+input[type="text"]:focus + p.third_p{
+    top: 90px;
+    font-size: 12px;
+    transition: ease-in-out 0.3s;
+}
+
+.signbox input[type="text"]:active + p.third_p{
+    top: 90px;
+    font-size: 12px;
+    transition: ease-in-out 0.3s;
+}
+
+.signbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid rgb(119, 119, 119);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: teal;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.signbox input[type="text"]:hover, input[type="password"]:hover{
+    border-bottom: 1px solid black;
+}
+
+.signbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 50px;
+    background: rgb(223, 154, 85);
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.signbox input[type="submit"]:hover, .signbox a:hover{
+    cursor: pointer;
+}
+
+.signbox form > a{
+    font-weight:500;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 70px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div.container div.blok_rejestracji{
+    background-color: rgb(243, 243, 245);
+}
+
+div.loginbox{
+    width:420px;
+    padding-bottom: 100px;
+    color: white;
+    border: 2px solid black;
+    margin-right: 100px;
+}
+
+.loginbox > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 90%;
+    margin: 60px 5% 0 5%;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid black;
+}
+.loginbox > a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+@media only screen and (max-width : 1280px) {
+    div.container{
+        flex-direction: column;
+    }
+
+    div.container > div{
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    
+    div.container > div > div{
+        margin:0;
+        width: 50%
+    }
+} 
+
+@media only screen and (max-width : 1280px){
+    div.container > div > div{
+        margin:0;
+        width: 80%
+    }
+}
+
+@media only screen and (max-width : 630px){
+    .signbox form p.third_p{
+        top: 190px;
+        left: 5%;
+    }
+    input[type="text"]:focus + p.third_p{
+        top: 170px;
+    }
+    
+    .signbox input[type="text"]:active + p.third_p{
+        top: 170px;
+    }
+
+    .signbox form p.fourth_p{
+        top: 270px;
+    }
+
+    input[type="password"]:focus + p.fourth_p{
+        top: 250px;
+        font-size: 12px;
+        transition: ease-in-out 0.3s;
+    }
+    input[type="password"]:active + p.fourth_p{
+        top: 250px;
+        font-size: 12px;
+        transition: ease-in-out 0.3s;
+    }
+    input.short_input{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
